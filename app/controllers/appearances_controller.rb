@@ -13,6 +13,17 @@ class AppearancesController < ApplicationController
     end
   end
 
+  def show
+      @appearance = Appearance.find(params[:id])
+    end
+
+  def edit
+      @appearance= Appearance.find(params[:id])
+    end
+ def update
+   @appearance= Appearance.find(params[:id])
+ end
+
   private
 
   def appearance_params

@@ -1,0 +1,14 @@
+DEliverables:
+edit appearance form /user-id/appearance/edit?
+As a user change a edit appearance of a rating
+Build out the edit functionality of appearance
+
+
+Add validations to models
+appearance validates with rating between 1 and 5
+
+On appearance creation keep track of producer who booked that appearance
+
+Appearance should belong to USEr
+
+Update Schema models for above change

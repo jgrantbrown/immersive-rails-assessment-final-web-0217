@@ -1,0 +1,15 @@
+<h1> Edit an appearance</h1>
+<h1> <%= @appearance.guest.name %> was on this show on <%= @appearance.episode.date %></h1>
+
+
+<%= form_for @appearance, :method => :POST do |f|%><br>
+
+<div class="">
+  Rating<%= f.number_field :rating, min:1, max:5 %>
+</div>
+
+<div class="">
+    <%= f.submit "update", appearance_path %>
+  </div>
+
+<% end %>
